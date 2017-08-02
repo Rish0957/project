@@ -96,10 +96,10 @@ paginate_path: "/blog/:num/"
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 collections:
   posts:
-    output: false
+    output: true
     permalink: /:title/
   pages:
-    output: false
+    output: true
     permalink: /:title/
 
 kramdown:
