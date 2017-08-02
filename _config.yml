@@ -97,10 +97,10 @@ paginate_path: "/blog/:num/"
 collections:
   posts:
     output: true
-    permalink: /project/:title/
+    permalink: /project/project/:title/
   pages:
     output: true
-    permalink: /project/:title
+    permalink: /project/project/:title
 
 kramdown:
   auto_ids: true
