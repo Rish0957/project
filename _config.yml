@@ -38,8 +38,8 @@ jekyll-archives:
     # year: '/:year/'
     # month: '/:year/:month/'
     # day: '/:year/:month/:day/'
-    tag: '/archive/tag/:name/'
-    category: '/archive/category/:name/'
+    tag: '/project/archive/tag/:name/'
+    category: '/project/archive/category/:name/'
 
 # Owner/author information
 author:
@@ -65,8 +65,8 @@ google_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Index.html
-    url: /
+  - title: Home
+    url: 
     external: false
     icon: home
   - title: Categories
@@ -77,16 +77,16 @@ links:
 # Sitemap configuration
 # https://github.com/kinnetica/jekyll-plugins
 sitemap:
-    file: "/sitemap.xml"
+    file: "/project/sitemap.xml"
     exclude:
-        - "/atom.xml"
-        - "/feed.xml"
-        - "/feed/index.xml"
+        - "/project/atom.xml"
+        - "/project/feed.xml"
+        - "/project/feed/index.xml"
     include_posts:
-        - "/index.html"
+        - "/project/index.html"
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/kolkata
+timezone:    Asia/Kolkata
 future:      true
 markdown:    kramdown
 highlighter: rouge
@@ -97,10 +97,10 @@ paginate_path: "/blog/:num/"
 collections:
   posts:
     output: true
-    permalink: /:title/
+    permalink: /project/:title/
   pages:
     output: true
-    permalink: /blog/:title
+    permalink: /project/:title
 
 kramdown:
   auto_ids: true
